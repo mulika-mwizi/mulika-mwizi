@@ -20,7 +20,7 @@
       "customizations": {
         "vscode": {
             "extensions": [
-                "modular-mojotools.vscode-mojo-nightly",
+                "modular-mojotools.vscode-mojo",
                 "ms-azuretools.vscode-docker",
                 "ms-python.black-formatter",
                 "ms-python.python",
