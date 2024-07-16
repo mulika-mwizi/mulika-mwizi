@@ -1,0 +1,31 @@
+{
+    "name": "mulika-mwizi",
+    "build": {
+        "dockerfile": "../Dockerfile",
+        "context": ".."
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+          "configureZshAsDefaultShell": true,
+          "upgradePackages": false,
+          "username": "vscode",
+          "userUid": "automatic",
+          "userGid": "automatic"
+        },
+        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+          "moby": false
+        }
+      },
+      "remoteUser": "vscode",
+      "customizations": {
+        "vscode": {
+            "extensions": [
+                "modular-mojotools.vscode-mojo-nightly",
+                "ms-azuretools.vscode-docker",
+                "ms-python.black-formatter",
+                "ms-python.python",
+                "ms-toolsai.jupyter"
+            ]
+        }
+      }
+}
